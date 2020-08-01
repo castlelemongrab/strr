@@ -32,6 +32,8 @@ describe('str', () => {
       .should.deep.equal([ '', '' ]);
     Strr.split_delimited('=\\=\\\\')
       .should.deep.equal([ '', '=\\' ]);
+    Strr.split_delimited('foo=')
+      .should.deep.equal([ 'foo', '' ]);
     Strr.split_delimited('foo\\=bar')
       .should.deep.equal([ 'foo=bar' ]);
     Strr.split_delimited('foo\\bar=')
