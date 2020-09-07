@@ -72,7 +72,7 @@ Strr = {
   */
   _emit: (_rv, _i, _chr) => {
 
-    return (_rv[_i] = _rv[_i].concat(_chr));
+    return (_rv[_i] += _chr);
   }
 };
 
